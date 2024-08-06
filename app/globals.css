@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  body{
+    @apply bg-slate-950 text-white relative;
+  }
+
+  button{
+    @apply hover:scale-110 transition-all duration-100
+  }
+
+  input{
+    @apply px-4 py-2 bg-slate-700 rounded-xl
+  }
+}
+
+@layer utilities{
+  .btn{
+    @apply self-start px-4 py-2 text-sm capitalize rounded-3xl 
+  }
+
+  .btn-danger{
+    @apply border bg-red-700 border-red-700 text-white
+  }
+
+  .btn-primary{
+    @apply border border-lime-400 bg-slate-700 text-lime-400;
+  }
+
+  .btn-primary-outline{
+    @apply border border-lime-400 text-lime-400
+  }
+
+  .input-group{
+    @apply flex flex-col gap-4
+  }
+}
